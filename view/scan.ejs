@@ -11,21 +11,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/style.css">
-    <title>QR Code Generator</title>
+    <title>QR code</title>
   </head>
   <body>
     <div class="container main-container">
-      <h1>QR Code Generator</h1>
-      <form action="/scan" method="post" class="form">
-        <textarea
-          name="qrData"
-          id="qrData"
-          cols="150"
-          rows="10"
-          placeholder="Enetr URL or text"
-        ></textarea>
-        <button type="submit" class="btn btn-primary">Generate QR Code</button>
-      </form>
+      <img src=<%=qrSrc%> alt="QR code">
+      <br/>
+      <a href="/" role="button" class="btn btn-secondary">Go Back</a>
     </div>
   </body>
 </html>
